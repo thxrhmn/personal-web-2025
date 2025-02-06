@@ -136,7 +136,7 @@ const profileData = {
 		items: [
 			{
 				text: "Email",
-				href: "mailto:rahmanmuhaemine@gmail.com",
+				href: "mailto:rahmanmuhaemin@gmail.com",
 				icon: Mail,
 			},
 			{
