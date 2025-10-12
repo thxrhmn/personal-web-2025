@@ -4,7 +4,7 @@ import { Code, Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ThemeToggle } from "@/components/theme-toggle"
+
 import { useState } from "react"
 
 export default function Header() {
@@ -36,7 +36,7 @@ export default function Header() {
               Contact
             </Link>
           </nav>
-          <ThemeToggle />
+          
           <Button variant="ghost" size="icon" className="sm:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>

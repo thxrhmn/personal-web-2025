@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen max-w-3xl mx-auto px-6 py-8 space-y-6 pt-16">
       {/* Hero Section */}
       <section id="hero" className="scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h1 className="text-4xl font-bold">{profileData.hero.name}</h1>
           <p className="text-xl text-muted-foreground">{profileData.hero.title}</p>
           <div className="flex flex-wrap gap-2 mt-4">
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="pt-16 -mt-16 scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h2 className="text-2xl font-semibold">{profileData.about.title}</h2>
           <p className="text-muted-foreground mt-4">{profileData.about.description}</p>
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* Work Experience Section */}
       <section id="experience" className="pt-16 -mt-16 scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h2 className="text-2xl font-semibold">{profileData.experience.title}</h2>
           <div className="space-y-4 mt-4">
             {profileData.experience.items.map((item, index) => (
@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="projects" className="pt-16 -mt-16 scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h2 className="text-2xl font-semibold">{profileData.projects.title}</h2>
           <ul className="space-y-8 mt-4">
             {profileData.projects.items.map((project, index) => (
@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* Skills Section */}
       <section id="skills" className="pt-16 -mt-16 scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h2 className="text-2xl font-semibold">{profileData.skills.title}</h2>
           <div className="flex flex-wrap gap-2 mt-4">
             {profileData.skills.items.map((skill, index) => (
@@ -97,7 +97,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="pt-16 -mt-16 scroll-mt-16">
-        <div className="bg-white border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
           <h2 className="text-2xl font-semibold">{profileData.contact.title}</h2>
           <div className="flex flex-wrap gap-2 mt-4">
             {profileData.contact.items.map((item, index) => (

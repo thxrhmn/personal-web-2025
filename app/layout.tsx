@@ -1,7 +1,6 @@
 import "./globals.css"
 import Footer from "@/components/footer"
 import Header from "@/components/header"
-import { ThemeProvider } from "@/components/theme-provider"
 import { Space_Mono } from "next/font/google"
 import type React from "react"
 
@@ -18,13 +17,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${spaceMono.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
