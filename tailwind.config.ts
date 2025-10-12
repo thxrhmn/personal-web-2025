@@ -9,7 +9,13 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ["Space Mono", "monospace"],
+      },
   		colors: {
+        'background-alt': '#F8F4E3',
+        'brand-yellow': '#F7C100',
+        'brand-purple': '#A020F0',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -51,10 +57,14 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+        boxShadow: {
+            'solid': '4px 4px 0px 0px rgba(0,0,0,1)',
+            'solid-lg': '6px 6px 0px 0px rgba(0,0,0,1)',
+        },
   		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			lg: '0px',
+  			md: '0px',
+  			sm: '0px'
   		}
   	}
   },

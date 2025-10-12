@@ -1,12 +1,11 @@
 import "./globals.css"
-
 import Footer from "@/components/footer"
-import { Geist_Mono } from "next/font/google"
 import Header from "@/components/header"
-import type React from "react"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Space_Mono } from "next/font/google"
+import type React from "react"
 
-const geistMono = Geist_Mono({ subsets: ["latin"] })
+const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] })
 
 export const metadata = {
   title: "Rahman Muhaemin - Fullstack Developer",
@@ -20,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistMono.className} antialiased`}>
+      <body className={`${spaceMono.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
           <main>{children}</main>
@@ -30,4 +29,3 @@ export default function RootLayout({
     </html>
   )
 }
-
