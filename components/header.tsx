@@ -26,6 +26,9 @@ export default function Header() {
             <Link href="#experience" className="transition hover:text-foreground/80">
               Experience
             </Link>
+            <Link href="#education" className="transition hover:text-foreground/80">
+              Education
+            </Link>
             <Link href="#projects" className="transition hover:text-foreground/80">
               Projects
             </Link>
@@ -50,6 +53,9 @@ export default function Header() {
             </Link>
             <Link href="#experience" className="transition hover:text-foreground/80">
               Experience
+            </Link>
+            <Link href="#education" className="transition hover:text-foreground/80">
+              Education
             </Link>
             <Link href="#projects" className="transition hover:text-foreground/80">
               Projects

@@ -54,6 +54,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="pt-16 -mt-16 scroll-mt-16">
+        <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">
+          <h2 className="text-2xl font-semibold">{profileData.education.title}</h2>
+          <div className="space-y-4 mt-4">
+            {profileData.education.items.map((item, index) => (
+              <div key={index}>
+                <h3 className="text-lg font-medium">{item.institution}</h3>
+                <p className="text-sm text-muted-foreground">{item.location}</p>
+                <p className="font-medium">{item.degree}</p>
+                {item.date && <p className="text-sm text-muted-foreground mt-1">{item.date}</p>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="pt-16 -mt-16 scroll-mt-16">
         <div className="bg-card border-2 border-black shadow-solid p-6 transition-shadow duration-100 hover:shadow-solid-lg">

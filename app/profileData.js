@@ -38,6 +38,29 @@ const profileData = {
 			},
 		],
 	},
+	education: {
+		title: "Education",
+		items: [
+			{
+				institution: "Universitas Terbuka",
+				degree: "Information System",
+				location: "South Jakarta, Indonesia",
+				date: "Graduation Date: -",
+			},
+			{
+				institution: "Dumbways Bootcamp",
+				degree: "Fullstack Web Development Bootcamp",
+				location: "Depok, Indonesia",
+        date: "Graduation Date: Aug 2023",
+			},
+			{
+				institution: "SMK AN-NAHL",
+				degree: "Computer and Network Engineering",
+				location: "Cianjur, Indonesia",
+        date: "Graduation Date: Aug 2017",
+			},
+		],
+	},
 	projects: {
 		title: "Projects",
 		items: [
